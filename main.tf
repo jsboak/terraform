@@ -25,7 +25,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-075ed77f64c9a6221"
+  ami           = "ami-0c17f1fcd4dd07256"
   instance_type = var.instance_size
 
   tags = {
