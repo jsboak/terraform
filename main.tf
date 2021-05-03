@@ -29,7 +29,7 @@ resource "aws_instance" "app_server" {
   key_name      = "us_west_1_jakes"
   instance_type = var.instance_size
   vpc_security_group_ids = ["sg-0aa6b747f518ebad6"]
-  associate_public_ip_address = true
+  associate_public_ip_address = "true"
 
   tags = {
     Name = var.instance_name
