@@ -26,6 +26,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-0c17f1fcd4dd07256"
+  key_name      = "us_west_1_jakes.pem"
   instance_type = var.instance_size
 
   tags = {
