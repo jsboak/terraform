@@ -25,7 +25,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0c17f1fcd4dd07256"
+  ami           = "ami-07b068f843ec78e72"
   key_name      = "us_west_1_jakes"
   instance_type = var.instance_size
   vpc_security_group_ids = ["sg-0aa6b747f518ebad6"]
